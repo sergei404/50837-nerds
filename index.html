@@ -8,7 +8,9 @@
      <div class="container">
        <header class="main-header">
           <nav class="main-navigation">
-            <img src="img/logo.png" width="140" height="70" alt="Нёрдс">
+            <a href="#">
+              <img src="img/logo.png" width="140" height="70" alt="Нёрдс">
+            </a>
             <ul class="site-navigation">
                <li><a href="#studio">студия</a></li>
                <li><a href="#customers">клиенты</a></li>
@@ -16,24 +18,24 @@
                <li><a href="#contacts">контакты</a></li>
             </ul>
             <ul class="basket">
-               <li><button>козина</button></li>
+               <li><a href="#">козина</a></li>
             </ul>
           </nav>
      </header>
      <main>
        <article class="slider">
          <div class="slider-dear">
-           <p><b>Долго,дорого,скрупулезно.</b></p>
+           <b>Долго,дорого,скрупулезно.</b>
            <p>математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
            <img src="" width="200" height="150">
          </div>
          <div class="slider-maths">
-           <p><b>Любим математику как ни кто другой</b></p>
+           <b>Любим математику как ни кто другой</b>
            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
            <img src="" width="200" height="150">
         </div>
         <div class="slider-hardcore">
-          <p><b>Только ночь только хардкор</b></p>
+          <b>Только ночь только хардкор</b>
           <p>Работать днем как все? Мы против этого. Ближе к полуночи работа только начинаеться.</p>
           <img src="" width="200" height="150">
         </div>
@@ -42,27 +44,30 @@
       <section class="services">
         <h1 class="visually-hidden">Услуги</h1>
         <div class="sites">
-          <img src="" width="70" height="50">
+          <div class="color">
+          </div>
           <h3>веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидет ваш сайт!</p>
-          <button>заказать</button>
+          <a href="#">заказать</a>
         </div>
         <div class="annexes">
-          <img src="" width="70" height="50">
+          <div class="color">
+          </div>
           <h3>приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <button>заказать</button>
+          <a href="#">заказать</a>
         </div>
         <div class="presentations">
-          <img src="" width="70" height="50">
+          <div class="color">
+          </div>
           <h3>презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <button>заказать</button>
+          <a href="#">заказать</a>
         </div>
       </section>
       <section class="about-us">
         <div class="we">
-          <p><b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+          <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
           <p>Исповедуем принципы минимализма и чистоты.Ставим математический расчет превыше креатива.Работаем не покладая рук, как роботы.</p>
           <span class="orders">выполняем заказы на разработку:</span>
           <ul>
@@ -97,14 +102,30 @@
     <footer class="footer-page">
       <section class="map">
         <iframe src=""></iframe>
+        <div class="adress">
+          <h2>NERDS DESING STUDIO</h2>
+          <p>191186, Санкт-Петербург,<br>
+          ул.Б.Конюшенная, д.19/8</p>
+          <p>тел.+7(812)275-75-75</p>
+          <a href="#">напишите нам</a>
+        </div>
+        <div class="form">
+          <h2>Напишите нам</h2>
+          <form action="/echo" method="post">
+            <div class="half-width">
+              <label for="name">Ваше имя:</label>
+              <input type="text" name="name" placeholder="Представтесь пожалуйста">
+            </div>
+            <div class="half-width">
+               <label for="email">Ваш e-mail:</label>
+               <input typr="text" name="email" placeholder="Для отправки ответа">
+            </div>
+            <label for="letter">Текст письма:</label>
+            <textarea name="letter" id="letter" placeholder="В свободной форме" rows="5"></textarea>
+            <input type="submit" value="отправить">
+         </form>
+       </div>
       </section>
-      <div class="adress">
-        <h2>NERDS DESING STUDIO</h2>
-        <p>191186, Санкт-Петербург,<br>
-        ул.Б.Конюшенная, д.19/8</p>
-        <p>тел.+7(812)275-75-75</p>
-        <a href="#">напишите нам</a>
-      </div>
       <section class="social">
         <div class="social-page">
           <a class="social-vk" href="#vk"><span class="networks">VK</span></a>
@@ -112,7 +133,7 @@
           <a class="social-youtube" href="#youtube"><span class="networks">Youtube</span></a>
         </div>
         <div class="friends">
-          <p><b>Давайте дружить,это выгодно!</b></p>
+          <b>Давайте дружить,это выгодно!</b>
           <p>Скидка 10% для друзей из социальных сетей</p>
         </div>
       </section>
