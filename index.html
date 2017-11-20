@@ -1,130 +1,160 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Нёрдс</title>
-  </head>
-  <body>
-     <div class="container">
-       <header class="main-header">
-          <nav class="main-navigation">
-            <a href="#">
-              <img src="img/logo.png" width="140" height="70" alt="Нёрдс">
+
+<head>
+  <meta charset="utf-8">
+  <title>Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="menu-logo" href="#">
+              <img src="img/nerds-logo.svg" width="160" height="70" alt="Нёрдс">
             </a>
-            <ul class="site-navigation">
-               <li><a href="#studio">студия</a></li>
-               <li><a href="#customers">клиенты</a></li>
-               <li><a href="#score">магазин</a></li>
-               <li><a href="#contacts">контакты</a></li>
-            </ul>
-            <ul class="basket">
-               <li><a href="#">козина</a></li>
-            </ul>
-          </nav>
-     </header>
-     <main>
-       <article class="slider">
-         <div class="slider-dear">
-           <b>Долго,дорого,скрупулезно.</b>
-           <p>математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-           <img src="" width="200" height="150">
-         </div>
-         <div class="slider-maths">
-           <b>Любим математику как ни кто другой</b>
-           <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-           <img src="" width="200" height="150">
+        <ul class="site-navigation">
+          <li><a href="#studio">студия</a></li>
+          <li><a href="#customers">клиенты</a></li>
+          <li><a href="/catalog.html">магазин</a></li>
+          <li><a href="#contacts">контакты</a></li>
+        </ul>
+        <ul class="basket">
+          <li><a href="#">корзина</a></li>
+        </ul>
+      </nav>
+    </header>
+    </div>
+  <main>
+    <div class="container">
+      <article class="header">
+        <div class="slider">
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+          <div class="slides">
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Долго, дорого, скрупулезно</div>
+                <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Любим математику<br>как ни кто другой</div>
+                <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Только ночь,<br> только харкор</div>
+                <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа тоько начинаеться.</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="slider-hardcore">
-          <b>Только ночь только хардкор</b>
-          <p>Работать днем как все? Мы против этого. Ближе к полуночи работа только начинаеться.</p>
-          <img src="" width="200" height="150">
-        </div>
-        <button>узнать больше</button>
       </article>
+    </div>
+    <div class="container">
       <section class="services">
         <h1 class="visually-hidden">Услуги</h1>
         <div class="sites">
-          <div class="color">
-          </div>
-          <h3>веб-сайты</h3>
+          <img src="img/illustration-1.png" width="300" height="145" alt="веб-сайты">
+          <h3 class="services-page">веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидет ваш сайт!</p>
           <a href="#">заказать</a>
         </div>
         <div class="annexes">
-          <div class="color">
-          </div>
-          <h3>приложения</h3>
+          <img src="img/illustration-2.png" width="300" height="145" alt="приложения">
+          <h3 class="services-page">приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           <a href="#">заказать</a>
         </div>
         <div class="presentations">
-          <div class="color">
-          </div>
-          <h3>презентации</h3>
+          <img src="img/illustration-3.png" width="300" height="145" alt="презентации">
+          <h3 class="services-page">презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
           <a href="#">заказать</a>
         </div>
       </section>
       <section class="about-us">
-        <div class="we">
-          <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
-          <p>Исповедуем принципы минимализма и чистоты.Ставим математический расчет превыше креатива.Работаем не покладая рук, как роботы.</p>
-          <span class="orders">выполняем заказы на разработку:</span>
-          <ul>
-            <li>Веб-сайтов любой сложности</li>
-            <li>Мобильных приложений для iOS и Android</li>
-            <li>Слайдшоу и видео для корпоративных презентаций</li>
-          </ul>
+        <div class="about-us-page">
+          <div class="we">
+            <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+            <p>Исповедуем принципы минимализма и чистоты.Ставим математический расчет превыше креатива.Работаем не покладая рук, как роботы.</p>
+            <span class="orders">выполняем заказы на разработку:</span>
+            <ul>
+              <li>Веб-сайтов любой сложности</li>
+              <li>Мобильных приложений для iOS и Android</li>
+              <li>Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </div>
+          <div class="many-numbers">
+            <img src="img/nerds-illustration.png" width="360" height="220" alt="Нёрдс">
+            <table class="rate">
+              <caption class="signature">с 2004 года любим точность во всем:</caption>
+              <tr>
+                <th>146<span class="percent">%</span></th>
+                <th>100<span class="percent">%</span></th>
+                <th>50<span class="percent">%</span></th>
+              </tr>
+              <tr>
+                <td>Уровень самоотдачи</td>
+                <td>Соблюдение сроков</td>
+                <td>Минимальная предоплата</td>
+              </tr>
+            </table>
+          </div>
         </div>
-        <div class="many-numbers">
-          <img src="img/logo.png" width="200" height="170" alt="Нёрдс">
-          <table>
-            <tr>
-              <th>146<span class="percent">%</span></th>
-              <th>100<span class="percent">%</span></th>
-              <th>50<span class="percent">%</span></th>
-            </tr>
-            <tr>
-              <td>Уровень самоотдачи</td>
-              <td>Соблюдение сроков</td>
-              <td>Минимальная предоплата</td>
-            </tr>
-           </table>
-        </div>
+
         <div class="pairs">
-          <img src="img/logohtml.png" width="200" height="170" alt="htmlacademy">
-          <img src="img/logoborodinski.png" width="200" height="170" alt="barbershop borodinski">
-          <img src="img/logopink.png" width="200" height="170" alt="pink">
-          <img src="img/logomishka.png" width="200" height="170" alt="mishka">
+          <img src="img/htmlacademy.svg" width="199" height="68" alt="htmlacademy">
+          <img src="img/borodinski.svg" width="209" height="90" alt="borodinski">
+          <img src="img/pink.svg" width="185" height="52" alt="pink">
+          <img src="img/mishka.svg" width="173" height="84" alt="mishka">
         </div>
       </section>
-    </main>
-    <footer class="footer-page">
+    </div>
+  </main>
+  <footer class="footer-page">
+    <div class="container">
       <section class="map">
         <iframe src=""></iframe>
         <div class="adress">
           <h2>NERDS DESING STUDIO</h2>
-          <p>191186, Санкт-Петербург,<br>
-          ул.Б.Конюшенная, д.19/8</p>
+          <p>191186, Санкт-Петербург,<br> ул.Б.Конюшенная, д.19/8</p>
           <p>тел.+7(812)275-75-75</p>
           <a href="#">напишите нам</a>
         </div>
         <div class="form">
           <h2>Напишите нам</h2>
           <form action="/echo" method="post">
-            <div class="half-width">
-              <label for="name">Ваше имя:</label>
-              <input type="text" name="name" placeholder="Представтесь пожалуйста">
-            </div>
-            <div class="half-width">
-               <label for="email">Ваш e-mail:</label>
-               <input typr="text" name="email" placeholder="Для отправки ответа">
-            </div>
-            <label for="letter">Текст письма:</label>
-            <textarea name="letter" id="letter" placeholder="В свободной форме" rows="5"></textarea>
+
+                <p class="half-width">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Представтесь пожалуйста">
+                </p>
+                <p class="half-width">
+                    <label for="email">Ваш e-mail:</label>
+                    <input typr="text" id=="email" placeholder="Для отправки ответа">
+              </p>
+              <p>
+                <label for="letter">Текст письма:</label>
+                <textarea name="review" id="letter" placeholder="В свободной форме" rows="5"></textarea>
+              </p>
             <input type="submit" value="отправить">
-         </form>
-       </div>
+          </form>
+        </div>
       </section>
       <section class="social">
         <div class="social-page">
@@ -137,6 +167,8 @@
           <p>Скидка 10% для друзей из социальных сетей</p>
         </div>
       </section>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
