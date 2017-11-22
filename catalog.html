@@ -12,28 +12,43 @@
   <div class="container">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="menu-logo" href="/index.html">
-              <img src="img/nerds-logo.svg" width="160" height="75" alt="Нёрдс">
+        <a class="menu-logo" href="#">
+              <img src="img/nerds-logo.svg" width="160" height="70" alt="Нёрдс">
             </a>
         <ul class="site-navigation">
           <li><a href="#studio">студия</a></li>
           <li><a href="#customers">клиенты</a></li>
-          <li><a href="#score">магазин</a></li>
+          <li><a href="/catalog.html">магазин</a></li>
           <li><a href="#contacts">контакты</a></li>
         </ul>
         <ul class="basket">
-          <li><a href="#">козина</a></li>
+          <li><a href="#">корзина</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>Магазин готовых шаблонов</h1>
+  </div>
+  <main>
+    <div class="container">
+      <h1 class="score">Магазин готовых шаблонов</h1>
+    </div>
+
       <aside class="filter">
         <form action="/echo" method="post">
           <fieldset>
             <legend>стоимость:</legend>
-            <input type="range">
-            <p>от <span class="null">0</span> до <span class="null">15000</span></p>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+              </div>
+            </div>
           </fieldset>
           <fieldset>
             <legend>сетка:</legend>
@@ -49,23 +64,28 @@
           </fieldset>
           <fieldset>
             <legend>особенности:</legend>
-            <input type="checkbox" name="slider" id="slider-field" checked>
-            <label for="slider-field">Слайдер</label>
-            <input type="checkbox" name="advantages" id="advantages-field">
-            <label for="advantages-field">Блок преимуществ</label>
-            <input type="checkbox" name="news" id="news-field" checked>
-            <label for="news-field">Новости</label>
-            <input type="checkbox" name="gallery" id="gallery-field">
-            <label for="gallery-field">Галерея</label>
-            <input type="checkbox" name="basket" id="basket-field">
-            <label for="basket-field">Корзина</label>
+            <label>
+              <input type="checkbox" name="slider" checked>Слайдер
+            </label>
+            <label>
+              <input type="checkbox" name="advantages" >Блок преимуществ
+            </label>
+            <label>
+              <input type="checkbox" name="news" checked>Новости
+            </label>
+            <label>
+              <input type="checkbox" name="gallery">Галерея
+            </label>
+            <label>
+              <input type="checkbox" name="basket">Корзина
+            </label>
           </fieldset>
-          <input type="submit" value="показать">
+          <button>показать</button>
         </form>
       </aside>
       <section class="templates">
-       <div class="sorting"
-        <div class="sorting-type">
+        <div class="sorting">
+          <div class="sorting-filter"
           <span class="about">сортировать:</span>
           <a href="#" class="options-price">по цене</a>
           <a href="#" class="options-type">по типу</a>
@@ -75,116 +95,122 @@
           <a class="up" href="#">вверх</a>
           <a class="down" href="#">вниз</a>
         </div>
-        <article class="sedona">
-          <div class="sedona-browser">
-             <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#e9e9e9" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+    </div>
+    <article class="sedona">
+      <div class="sedona-browser">
+        <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#e9e9e9" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
 
-          </div>
-          <img src="img/sedona.jpg" alt="sedona">
-          <div class="sedona-popup">
-            <h3>SEDONA</h3>
-            <p>Информационный сайт для туристов</p>
-            <a href="#">9900</a>
-          </div>
-        </article>
-        <article class="pink">
-          <div class="pink-browser">
-          </div>
-          <img src="img/pink.jpg" alt="pink">
-          <div class="pink-popup">
-            <h3>PINK APP</h3>
-            <p>Продуктовый лендинг преложения для iOS и Android</p>
-            <a href="#">9900</a>
-          </div>
-        </article>
-        <article class="barbershop">
-          <div class="barbershop-browser">
-          </div>
-          <img src="img/barbershop.jpg" alt="barbershop">
-          <div class="barbershop-popup">
-            <h3>BARBERSHOP</h3>
-            <p>Сайт салона красоты. Для мужчин, да</p>
-            <a href="#">9900</a>
-          </div>
-        </article>
-        <article class="mishka">
-          <div class="mishka-browser">
-          </div>
-          <img src="img/mishka.jpg" alt="mishka">
-          <div class="mishka-popup">
-            <h3>MISHKA</h3>
-            <p>Интернет-магазин вязаных игрушек</p>
-            <a href="#">9900</a>
-          </div>
-        </article>
-        <article class="plus">
-          <div class="plus-browser">
-          </div>
-          <img src="img/aplus.jpg" alt="aplus">
-          <div class="plus-popup">
-            <h3>A-PLUS</h3>
-            <p>Лендинг курсов повышения квалификации</p>
-            <a href="#">9900</a>
-          </div>
-        </article>
-        <article class="kvast">
-          <div class="kvast-browser">
-          </div>
-          <img src="img/kvast.jpg" alt="kvast">
-          <div class="kvast-popup">
-            <h3>КВАСТ</h3>
-            <p>Промо-сайт производителя крафтового кваса</p>
-            <a href="#">9900</a>
-          </div>
-        </article>
-        <div class="pagination">
-          <ul>
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">следующая</a>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer class="footer-page">
+      </div>
+      <img src="img/sedona.jpg" alt="sedona">
+      <div class="sedona-popup">
+        <h3>SEDONA</h3>
+        <p>Информационный сайт для туристов</p>
+        <a href="#">9900</a>
+      </div>
+    </article>
+    <article class="pink">
+      <div class="pink-browser">
+      </div>
+      <img src="img/pink.jpg" alt="pink">
+      <div class="pink-popup">
+        <h3>PINK APP</h3>
+        <p>Продуктовый лендинг преложения для iOS и Android</p>
+        <a href="#">9900</a>
+      </div>
+    </article>
+    <article class="barbershop">
+      <div class="barbershop-browser">
+      </div>
+      <img src="img/barbershop.jpg" alt="barbershop">
+      <div class="barbershop-popup">
+        <h3>BARBERSHOP</h3>
+        <p>Сайт салона красоты. Для мужчин, да</p>
+        <a href="#">9900</a>
+      </div>
+    </article>
+    <article class="mishka">
+      <div class="mishka-browser">
+      </div>
+      <img src="img/mishka.jpg" alt="mishka">
+      <div class="mishka-popup">
+        <h3>MISHKA</h3>
+        <p>Интернет-магазин вязаных игрушек</p>
+        <a href="#">9900</a>
+      </div>
+    </article>
+    <article class="plus">
+      <div class="plus-browser">
+      </div>
+      <img src="img/aplus.jpg" alt="aplus">
+      <div class="plus-popup">
+        <h3>A-PLUS</h3>
+        <p>Лендинг курсов повышения квалификации</p>
+        <a href="#">9900</a>
+      </div>
+    </article>
+    <article class="kvast">
+      <div class="kvast-browser">
+      </div>
+      <img src="img/kvast.jpg" alt="kvast">
+      <div class="kvast-popup">
+        <h3>КВАСТ</h3>
+        <p>Промо-сайт производителя крафтового кваса</p>
+        <a href="#">9900</a>
+      </div>
+    </article>
+    <div class="pagination">
+      <ul>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">следующая</a>
+      </ul>
+    </div>
+    </section>
+    </div>
+  </main>
+  <footer class="footer-page">
+    <div class="container">
       <section class="map">
-         <iframe src=""></iframe>
-         <div class="adress">
-           <b>NERDS DESING STUDIO</b>
-           <p>191186, Санкт-Петербург,<br>
-           ул.Б.Конюшенная, д.19/8</p>
-           <p>тел.<a href="tel:+78122757575">+7(812)275-75-75</a></p>
-           <a href="#">напишите нам</a>
-         </div>
-         <div class="form">
-           <h2>Напишите нам</h2>
-           <form action="/echo" method="post">
-             <div class="half-width">
-               <label for="name">Ваше имя:</label>
-               <input type="text" name="name" id="name" placeholder="Представтесь пожалуйста">
-             </div>
-             <div class="half-width">
-                <label for="email">Ваш e-mail:</label>
-                <input typr="text" name="email" id="email" placeholder="Для отправки ответа">
-             </div>
-             <label for="letter">Текст письма:</label>
-             <textarea name="letter" id="letter" placeholder="В свободной форме" rows="5"></textarea>
-             <input type="submit" value="отправить">
+        <div class="adress">
+          <b>NERDS DESING STUDIO</b>
+          <p>191186, Санкт-Петербург,<br> ул.Б.Конюшенная, д.19/8</p>
+          <p>тел.<a href="tel:+78122757575">+7(812)275-75-75</a></p>
+          <a href="#">напишите нам</a>
+        </div>
+        <div class="form">
+          <h2>Напишите нам</h2>
+          <form action="/echo" method="post">
+            <p class="half-width">
+              <label>Ваше имя:</label>
+              <input type="text" id="name" placeholder="Представтесь пожалуйста">
+            </p>
+            <p class="half-width">
+              <label>Ваш e-mail:</label>
+              <input typr="text" name="email" placeholder="Для отправки ответа">
+            </p>
+            <p class="form-page">
+              <label for="letter">Текст письма:</label>
+              <textarea name="review" id="letter" placeholder="В свободной форме" rows="5"></textarea>
+            </p>
+            <input class="form-submit" type="submit" value="отправить">
+            <button class="form-button">закрыть</button>
           </form>
         </div>
-       </section>
-       <section class="social">
-         <div class="social-page">
-           <a class="social-vk" href="#vk"><span class="networks">VK</span></a>
-           <a class="social-facebook" href="#facebook"><span class="networks">Facebook</span></a>
-           <a class="social-youtube" href="#youtube"><span class="networks">Youtube</span></a>
-         </div>
-         <div class="friends">
-           <b>Давайте дружить,это выгодно!</b>
-           <p>Скидка 10% для друзей из социальных сетей</p>
-         </div>
-       </section>
-     </footer>
-   </body>
-   </html>
+      </section>
+      <section class="social">
+        <div class="social-page">
+          <a class="networks social-vk" href="#vk"><span class="visually-hidden">VK</span></a>
+          <a class="networks social-facebook" href="#facebook"><span class="visually-hidden">Facebook</span></a>
+          <a class="networks social-instagram" href="#youtube"><span class="visually-hidden">Instagram</span></a>
+        </div>
+        <div class="friends">
+          <b>Давайте дружить,это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей</p>
+        </div>
+      </section>
+    </div>
+  </footer>
+</body>
+
+</html>
