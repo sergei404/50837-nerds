@@ -11,15 +11,13 @@ a {
 }
 
 .container {
-  width: 1440px;
+  width: 1160px;
   margin: 0 auto;
-  background-color: #fff;
 }
 
 .main-header {
-  width: 1160px;
+  width: 100%;
   min-height: 110px;
-  padding: 0 140px;
   background-color: #eeeeee;
 }
 
@@ -39,11 +37,11 @@ a {
 .menu-logo {
   padding-top: 45px;
 }
-.menu-logo a:hover path {
+.menu-logo:hover svg path {
   fill: #303030;
 }
-.menu-logo a:visited  {
-  color: #a6a6a6;
+.menu-logo:active svg path {
+  fill: #a6a6a6;
 }
 
 .site-navigation {
@@ -296,9 +294,21 @@ a {
   margin-top: 35px;
 }
 .we li {
-  padding-bottom: 35px;
+  margin-bottom: 35px;
+  position: relative;
+  list-style: none;
 }
-
+.we li::before {
+  content: "";
+  display: table;
+  width: 24px;
+  height: 2px;
+  position: absolute;
+  left: -33px;
+  background-color: #fb565a;
+  top: 50%;
+  transform: translateY(-50%);
+}
 .many-numbers {
   width: 360px;
 }
@@ -518,6 +528,7 @@ a {
   background-image: url("../img/insta-icon.svg");
   background-repeat: no-repeat;
 }
+
 .friends b {
   font-size: 36px;
   font-weight: bold;
