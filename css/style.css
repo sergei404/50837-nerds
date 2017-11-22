@@ -23,7 +23,7 @@ a {
 
 .main-navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -80,12 +80,8 @@ a {
   left: -5px;
   background-image: url("../img/cart-icon.svg");
 }
-.container {
-  width: 1440px;
-  margin: 0 auto;
-  background-color: #fff;
-}
-.header {
+
+.slider-header {
   background: #eeeeee;
 }
 
