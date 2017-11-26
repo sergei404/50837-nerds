@@ -31,7 +31,6 @@
   <main>
 
       <article class="slider-header">
-        <div class="container">
         <div class="slider">
           <input type="radio" id="btn-1" name="toggle" checked>
           <input type="radio" id="btn-2" name="toggle">
@@ -65,7 +64,7 @@
             </div>
           </div>
         </div>
-        </div>
+
       </article>
 
     <div class="container">
@@ -142,6 +141,7 @@
         <div class="form">
           <h2>Напишите нам</h2>
           <form action="/echo" method="post">
+           <div class="equalizer">
             <p class="half-width">
               <label>Ваше имя:</label>
               <input type="text" id="name" placeholder="Представтесь пожалуйста">
@@ -150,20 +150,21 @@
               <label>Ваш e-mail:</label>
               <input typr="text" name="email" placeholder="Для отправки ответа">
             </p>
+          </div>
             <p class="form-page">
               <label for="letter">Текст письма:</label>
               <textarea name="review" id="letter" placeholder="В свободной форме" rows="5"></textarea>
             </p>
-            <input class="form-submit" type="submit" value="отправить">
+            <button class="form-submit">отправить</button>
             <button class="form-button">закрыть</button>
           </form>
         </div>
       </section>
       <section class="social">
         <div class="social-page">
-          <a class="networks" href="#vk"><span class="social-vk">VK</span></a>
-          <a class="networks" href="#facebook"><span class="social-facebook">Facebook</span></a>
-          <a class="networks" href="#youtube"><span class="social-instagram">Instagram</span></a>
+          <a class="networks social-vk" href="#vk"><span class="visually-hidden">VK</span></a>
+          <a class="networks social-facebook" href="#facebook"><span class="visually-hidden">Facebook</span></a>
+          <a class="networks social-instagram" href="#youtube"><span class="visually-hidden">Instagram</span></a>
         </div>
         <div class="friends">
           <b>Давайте дружить,это выгодно!</b>

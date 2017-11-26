@@ -9,8 +9,9 @@
 </head>
 
 <body>
-  <div class="container">
+
     <header class="main-header">
+      <div class="container">
       <nav class="main-navigation">
         <a class="menu-logo" href="#">
               <img src="img/nerds-logo.svg" width="160" height="70" alt="Нёрдс">
@@ -25,13 +26,14 @@
           <li><a href="#">корзина</a></li>
         </ul>
       </nav>
+      </div>
     </header>
-  </div>
-  <main>
-    <div class="container">
-      <h1 class="score">Магазин готовых шаблонов</h1>
-    </div>
 
+  <main>
+
+      <h1 class="score">Магазин готовых шаблонов</h1>
+
+     <section class="main-templates">
       <aside class="filter">
         <form action="/echo" method="post">
           <fieldset>
@@ -85,24 +87,27 @@
       </aside>
       <section class="templates">
         <div class="sorting">
-          <div class="sorting-filter"
+         <div class="sorting-filter">
           <span class="about">сортировать:</span>
+        <div class="ref"
           <a href="#" class="options-price">по цене</a>
           <a href="#" class="options-type">по типу</a>
           <a href="#" class="options-name">по названию</a>
         </div>
-        <div class="sorting-direction">
-          <a class="up" href="#">вверх</a>
-          <a class="down" href="#">вниз</a>
+        </div>
+        <div class="align-items">
+          <a class="down" href="#"><span class="visually-hidden">вверх</span></a>
+          <a class="up" href="#"><span class="visually-hidden">вниз</span></a>
         </div>
     </div>
+    <div class="production">
     <article class="sedona">
       <div class="sedona-browser">
         <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#e9e9e9" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
 
       </div>
       <img src="img/sedona.jpg" alt="sedona">
-      <div class="sedona-popup">
+      <div class="popup sedona-page">
         <h3>SEDONA</h3>
         <p>Информационный сайт для туристов</p>
         <a href="#">9900</a>
@@ -110,9 +115,10 @@
     </article>
     <article class="pink">
       <div class="pink-browser">
+        <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#e9e9e9" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
       </div>
       <img src="img/pink.jpg" alt="pink">
-      <div class="pink-popup">
+      <div class="popup pink-page">
         <h3>PINK APP</h3>
         <p>Продуктовый лендинг преложения для iOS и Android</p>
         <a href="#">9900</a>
@@ -120,9 +126,10 @@
     </article>
     <article class="barbershop">
       <div class="barbershop-browser">
+        <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#e9e9e9" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
       </div>
       <img src="img/barbershop.jpg" alt="barbershop">
-      <div class="barbershop-popup">
+      <div class="popup barbershop-page">
         <h3>BARBERSHOP</h3>
         <p>Сайт салона красоты. Для мужчин, да</p>
         <a href="#">9900</a>
@@ -130,9 +137,10 @@
     </article>
     <article class="mishka">
       <div class="mishka-browser">
+        <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#e9e9e9" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
       </div>
       <img src="img/mishka.jpg" alt="mishka">
-      <div class="mishka-popup">
+      <div class="popup mishka-page">
         <h3>MISHKA</h3>
         <p>Интернет-магазин вязаных игрушек</p>
         <a href="#">9900</a>
@@ -140,9 +148,10 @@
     </article>
     <article class="plus">
       <div class="plus-browser">
+        <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#e9e9e9" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
       </div>
       <img src="img/aplus.jpg" alt="aplus">
-      <div class="plus-popup">
+      <div class="popup plus-page">
         <h3>A-PLUS</h3>
         <p>Лендинг курсов повышения квалификации</p>
         <a href="#">9900</a>
@@ -150,24 +159,26 @@
     </article>
     <article class="kvast">
       <div class="kvast-browser">
+        <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#e9e9e9" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
       </div>
       <img src="img/kvast.jpg" alt="kvast">
-      <div class="kvast-popup">
+      <div class="popup kvast-page">
         <h3>КВАСТ</h3>
         <p>Промо-сайт производителя крафтового кваса</p>
         <a href="#">9900</a>
       </div>
     </article>
+    <div>
     <div class="pagination">
-      <ul>
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">следующая</a>
+      <ul class="pagination-page">
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">следующая</a></li>
       </ul>
     </div>
     </section>
-    </div>
+  </section>
   </main>
   <footer class="footer-page">
     <div class="container">
@@ -181,6 +192,7 @@
         <div class="form">
           <h2>Напишите нам</h2>
           <form action="/echo" method="post">
+           <div class="equalizer">
             <p class="half-width">
               <label>Ваше имя:</label>
               <input type="text" id="name" placeholder="Представтесь пожалуйста">
@@ -189,12 +201,15 @@
               <label>Ваш e-mail:</label>
               <input typr="text" name="email" placeholder="Для отправки ответа">
             </p>
+          </div>
             <p class="form-page">
               <label for="letter">Текст письма:</label>
               <textarea name="review" id="letter" placeholder="В свободной форме" rows="5"></textarea>
             </p>
-            <input class="form-submit" type="submit" value="отправить">
+            <button class="form-submit">отправить</button>
             <button class="form-button">закрыть</button>
+          </form>
+
           </form>
         </div>
       </section>
