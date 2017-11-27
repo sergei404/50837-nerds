@@ -16,7 +16,7 @@ a {
 }
 
 .main-header {
-  width: 1440px;
+  width: 100%;
   min-height: 110px;
   background-color: #eeeeee;
 }
@@ -83,17 +83,15 @@ a {
 }
 
 .slider-header {
-  width: 1440px;
+  width: 100%;
   height: 420px;
   background: #eeeeee;
 }
 
 .slider {
   position: relative;
-  width: 1440px;
+  width: 100%;
   height: 420px;
-  margin-left: 140px;
-
 }
 
 .slider input[type=radio] {
@@ -211,8 +209,16 @@ a {
   display: block;
 }
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
 }
+
 .services {
   display: flex;
   justify-content: space-between;
@@ -281,7 +287,6 @@ a {
 }
 .about-us {
   margin-top: 80px;
-  margin-left: 80px;
 }
 .about-us-page {
   display: flex;
@@ -374,7 +379,7 @@ a {
 }
 .map {
   position: relative;
-  width: 1440px;
+  width: 100%;
   min-height: 420px;
   margin: 0;
   background-image: url("../img/img001.jpg");
@@ -520,9 +525,8 @@ a {
 }
 .social {
   display: flex;
-  width: 1440px;
+  width: 100%;
   min-height: 150px;
-  margin-left: 140px;
   margin-top: 70px;
 }
 .social-page {
@@ -591,7 +595,7 @@ a {
   justify-content: space-between;
 }
 .score {
-  width: 1440px;
+  width: 100%;
   padding-top: 80px;
   padding-bottom: 105px;
   margin-top: 0;
