@@ -423,7 +423,7 @@ a {
   background: none;
 }
 .form {
-  display: none;
+  display: ;
   position: absolute;
   width: 960px;
   min-height: 595px;
@@ -459,7 +459,7 @@ a {
      margin-bottom: 30px;
      padding: 10px 15px;
      font-size: 16px;
-     border: 2px solid #d7dcde;
+     outline: 2px solid #d7dcde;
 }
 .form label {
     display: block;
@@ -472,7 +472,7 @@ a {
   padding: 10px 15px;
   font-size: 17px;
   margin-bottom: 30px;
-  border: 2px solid #d7dcde;
+  outline: 2px solid #d7dcde;
 }
 .form-submit {
   display: block;
@@ -490,15 +490,15 @@ a {
 }
 .half-width input:hover,
 .form-page textarea:hover {
-  border:  2px solid #b4b9bb;
+  outline:  2px solid #b4b9bb;
 }
 .half-width input:focus,
 .form-page textarea:focus {
-  border:  2px solid #000000;
+  outline:  2px solid #000000;
 }
 .half-width input:invalid,
 .form-page textarea:invalid {
-  border:  2px solid #e74246;
+  outline:  2px solid #e74246;
 }
 .form-button {
   font-size: 0;
