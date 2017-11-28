@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -44,14 +44,14 @@
           <div class="slides">
             <div class="slide">
               <div class="slide-text">
-                <div class="slide-title">Долго, дорого, скрупулезно</div>
-                <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                <a class="btn" href="#">Узнать больше</a>
+                <div class="slide-title">Долго, дорого, скрупулезно.</div>
+                <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+                <a class="btn" href="#"><span class="discover">Узнать больше</span></a>
               </div>
             </div>
             <div class="slide">
               <div class="slide-text">
-                <div class="slide-title">Любим математику как ни кто другой</div>
+                <div class="slide-title">Любим математику как никто другой</div>
                 <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
                 <a class="btn" href="#">Узнать больше</a>
               </div>
@@ -93,7 +93,7 @@
       <section class="about-us">
         <div class="about-us-page">
           <div class="we">
-            <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+            <b>Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</b>
             <p>Исповедуем принципы минимализма и чистоты.Ставим математический расчет превыше креатива.Работаем не покладая рук, как роботы.</p>
             <span class="orders">выполняем заказы на разработку:</span>
             <ul>
@@ -121,7 +121,9 @@
         </div>
 
         <div class="pairs">
+         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-1.png" width="199" height="68" alt="htmlacademy">
+        </a>
           <img src="img/logo-2.png" width="209" height="90" alt="borodinski">
           <img src="img/logo-3.png" width="185" height="52" alt="pink">
           <img src="img/logo-4.png" width="173" height="84" alt="mishka">
@@ -131,6 +133,7 @@
   </main>
   <footer class="footer-page">
       <section class="map">
+
         <div class="adress">
           <b>NERDS DESING STUDIO</b>
           <p>191186, Санкт-Петербург,<br>
@@ -143,12 +146,12 @@
           <form action="/echo" method="post">
            <div class="equalizer">
             <p class="half-width">
-              <label>Ваше имя:</label>
-              <input type="text" id="name" placeholder="Представтесь пожалуйста">
+              <label for="name">Ваше имя:</label>
+              <input type="text" name="name" pattern="cirillic" placeholder="Представтесь пожалуйста">
             </p>
             <p class="half-width">
-              <label>Ваш e-mail:</label>
-              <input typr="text" name="email" placeholder="Для отправки ответа">
+              <label for="email">Ваш e-mail:</label>
+              <input type="email" name="email" placeholder="Для отправки ответа">
             </p>
           </div>
             <p class="form-page">
@@ -156,7 +159,7 @@
               <textarea name="review" id="letter" placeholder="В свободной форме" rows="5"></textarea>
             </p>
             <button class="form-submit">отправить</button>
-            <button class="form-button">закрыть</button>
+            <svg class="form-button" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#fecccd" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
           </form>
       </section>
       <section class="social">
