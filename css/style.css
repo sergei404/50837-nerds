@@ -95,7 +95,7 @@ a {
 
 .slider-controls {
   position: absolute;
-  bottom: 100px;
+  bottom: 120px;
   left: 50%;
   width: 200px;
   height: 10px;
@@ -217,7 +217,7 @@ a {
   display: flex;
   justify-content: space-between;
   width: 1100px;
-  padding-top: 85px;
+  padding-top: 70px;
   padding-bottom: 80px;
 }
 .annexes,
@@ -226,7 +226,7 @@ a {
   flex-direction: column;
   width: 300px;
   padding-left: 100px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .sites {
   display: flex;
@@ -238,20 +238,20 @@ a {
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
-  padding-top: 3px;
+  padding-top: 1px;
 }
 .services p {
   display: inline-block;
   width: 245px;
-  line-height: normal;
+  line-height: 1.5;
   text-align: left;
-  margin-top: -2px;
+  margin-top: -8px;
 }
 .services a {
   display: block;
   width: 160px;
   padding: 15px 0;
-  margin-top: 22px;
+  margin-top: 17px;
   font-size: 16px;
   font-weight: bold;
   color: #ffffff;
@@ -295,7 +295,7 @@ a {
   display: flex;
   justify-content: space-between;
   width: 1160px;
-  padding-top: 70px;
+  padding-top: 65px;
   padding-bottom: 80px;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
@@ -311,33 +311,37 @@ a {
 }
 .we p {
   display: inline-block;
-  margin-top: 40px;
+  margin-top: 36px;
   margin-bottom: 40px;
 }
 .orders {
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: ;
+  word-spacing: 1px;
 }
 .we ul {
-  margin-top: 35px;
+  margin-top: 27px;
 }
 .we li {
-  margin-bottom: 35px;
+  margin-bottom: 28px;
   position: relative;
   list-style: none;
 }
 .we li::before {
   content: "";
   display: table;
-  width: 24px;
+  width: 25px;
   height: 2px;
   position: absolute;
-  left: -33px;
+  left: -40px;
   background-color: #fb565a;
   top: 50%;
   transform: translateY(-50%);
 }
 .many-numbers {
   width: 360px;
+
 }
 .rate {
   width: 100%;
@@ -364,7 +368,6 @@ a {
 .pairs {
   display: flex;
   justify-content: space-around;
-  align-items: baseline;
   width: 1160px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -386,6 +389,16 @@ a {
   min-height: 420px;
   margin: 0;
   background-image: url("../img/img001.jpg");
+}
+.map::before {
+  position: absolute;
+  content: "";
+  display: table;
+  width: 165px;
+  height: 185px;
+  right: 320px;
+  top: 90px;
+  background-image: url("../img/map-marker.png");
 }
 .adress {
   position: absolute;
@@ -426,14 +439,18 @@ a {
   background: none;
 }
 .form {
-  display: ;
   position: absolute;
-  width: 960px;
-  min-height: 595px;
-  left: 180px;
-  top: -145px;
+  display: none;
   background-color: #ffffff;
   box-shadow: 0 15px 50px 10px #b0b0b0;
+}
+.form-show {
+  display: block;
+}
+.popup-form {
+  left: 180px;
+  top: -145px;
+  width: 960px;
 }
 .form h2 {
   display: inline-block;
@@ -510,21 +527,21 @@ a {
   color: #444444;
 }
 .half-width input:invalid {
-  outline:  2px solid #e74246;
-}
-.half-width input:invalid {
   color: #e74246;
+  outline:  2px solid #e74246;
 }
 .form-button  {
   position: absolute;
-  top: -60px;
-  right: -5px;
+  top: -70px;
+  right: -15px;
   outline: 0;
+  background: none;
+  border: none;
 }
-.form-button:hover path {
+.form-button:hover svg path {
    fill: #fb565a;
 }
-.form-button:active path {
+.form-button:active svg path {
   fill: #ffeeee;
 }
 .social {
@@ -537,11 +554,14 @@ a {
   display: flex;
   justify-content: space-between;
   width: 260px;
-  margin-left: 80px;
+  list-style: none;
+  margin-left: 50px;
   margin-right: 140px;
 }
 .networks {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 80px;
   height: 80px;
   background: #e1e1e1;
@@ -553,47 +573,10 @@ a {
 .networks:active {
   background: #d7373b;
 }
-.social-vk::before {
-  position: absolute;
-  content: "";
-  display: table;
-  width: 26px;
-  height: 15px;
-  left: 27px;
-  top: 35px;
-  background-image: url("../img/vk-icon.svg");
-  background-repeat: no-repeat;
+.networks:active path {
+   fill: #e37376;
 }
-.social-facebook::before {
-  position: absolute;
-  content: "";
-  display: table;
-  width: 12px;
-  height: 22px;
-  left: 33px;
-  top: 30px;
-  background-image: url("../img/fb-icon.svg");
-  background-repeat: no-repeat;
-}
-.social-instagram::before {
-  position: absolute;
-  content: "";
-  display: table;
-  width: 21px;
-  height: 21px;
-  left: 30px;
-  top: 30px;
-  background-image: url("../img/insta-icon.svg");
-  background-repeat: no-repeat;
-}
-.social-facebook:active {
-  background-image: url("../img/fb-icon1.svg");
-}
-.social-vk:active::before path,
-.social-instagram:active::before path,
-.social-facebook::before:active path {
-  fill: #e37376;
-}
+
 .friends b {
   font-size: 36px;
   font-weight: bold;
