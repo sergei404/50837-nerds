@@ -61,11 +61,24 @@ a {
 .basket a:active {
   color: #a6a6a6;
 }
-
+.active {
+  position: relative;
+}
+.active::after {
+  position: absolute;
+  content: "";
+  display: table;
+  width: 100%;
+  height: 2px;
+  background-color: #fb565a;
+  bottom: -10px;
+  left: 0;
+}
 .basket {
   position: relative;
   padding-top: 59px;
   list-style: none;
+  padding-left: 35px;
 }
 
 .basket::before {
@@ -74,7 +87,7 @@ a {
   display: table;
   width: 16px;
   height: 16px;
-  left: -1px;
+  left: 0;
   background-image: url("../img/cart-icon.svg");
 }
 
@@ -366,7 +379,7 @@ a {
 }
 .percent {
   font-size: 22px;
-  vertical-align: top;
+  vertical-align: super;
 }
 .pairs {
   display: flex;
@@ -391,7 +404,6 @@ a {
   position: relative;
   width: 100%;
   min-height: 420px;
-  margin-right:  90px;
   background-image: url("../img/img001.jpg");
 }
 .map::before {
